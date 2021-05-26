@@ -28,7 +28,7 @@ Daemon is ready
 chmod 766 gpfs
 cp gpfs /usr/local/bin
 export IPFS_PATH=你想要的工作目录
-gpfs.exe daemon --init --miner-address=你的BSC钱包地址
+gpfs daemon --init --miner-address=你的BSC钱包地址
 ```
 
 ## 矿工浏览器
