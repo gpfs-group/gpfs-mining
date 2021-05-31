@@ -8,7 +8,7 @@
 https://github.com/gpfs-group/gpfs-mining/releases
 
 ## Windows 环境
-解压`windows_amd64.zip`
+解压`windows_amd64.zip` (32位版本`windows_386.zip`)  
 用记事本打开`run.bat`, 修改其中的工作目录（保证硬盘中至少有10G空间）和钱包地址。
 ```
 set IPFS_PATH=你想要的工作目录
