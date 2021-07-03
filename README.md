@@ -1,27 +1,29 @@
-# GPFS挖矿教程
+# GPFS mining tutorial
 
-## 下载挖矿软件
+## Download mining software
 
-到这里下载对应环境的最新版本二进制文件  
+Go here to download the latest version of the binary file for the corresponding environment 
 https://github.com/gpfs-group/gpfs-mining/releases
 
-## Windows 环境
-解压`windows_amd64.zip` (32位版本`windows_386.zip`)  
-用记事本打开`run.bat`, 修改其中的工作目录（保证硬盘中至少有10G空间）和钱包地址。
+## Windows
+Unzip `windows_amd64.zip` (32-bit version `windows_386.zip`)  
+Open `run.bat` with Notepad, modify the working directory (make sure there is at least 10G space in the hard disk) and wallet address.
+
 ```
-set IPFS_PATH=你想要的工作目录
-gpfs.exe daemon  --init --miner-address=你的BSC钱包地址
+set IPFS_PATH=The working directory you want
+gpfs.exe daemon  --init --miner-address=Your BSC wallet address
 pause
 ```
-然后双击运行`run.bat`，就这么简单。
+Then double-click to run `run.bat`, it's that simple.
 
-最后一行，输出如下，表示成功了
+The last line, the output is as follows, indicating success
+
 ```
 Daemon is ready
 ```
 
-## Linux 环境
-解压`linux_amd64.zip`，依次执行
+## Linux
+Unzip `linux_amd64.zip` and execute in turn
 ```
 chmod 766 gpfs
 cp gpfs /usr/local/bin
@@ -29,24 +31,22 @@ export IPFS_PATH=你想要的工作目录
 gpfs daemon --init --miner-address=你的BSC钱包地址
 ```
 
-## 矿工浏览器
+## Miner browser
 https://scan.gpfs.xyz/
 
-可以在矿工浏览器上查看，矿工的状态和出票情况。在兑换支票页面登录MetaMask前，将支票兑换成GPS代币。
+You can check the miner's status and ticket issuance on the miner's browser. Before logging in to MetaMask on the check exchange page, exchange the check into GPS tokens.
 
+## Mining principle
+- The GPFS network randomly selects several online lucky miner nodes (detailed in the data amount white paper) every ten minutes. The principle is similar to that of Filecoin.
+- Then use the EIP712 signature protocol to generate several checks and issue them to lucky miners. After miners get the check, they need to call the smart contract to exchange the check into GPS tokens. There is no limit to the time to redeem a check, and it can be exchanged in a browser once it has accumulated to a certain amount.
+- The total amount of GPS is 10 billion, halved in 4 years, and 23782.3439 GPS will be issued every round (10 minutes) before the halving.
+- In each round of tickets issued, 50% will be distributed to lucky miners on average, and 50% will be distributed in proportion to the number of lucky miners holding GPS. Therefore, the more GPS held, the more rewards you will get. (The holding here must be the GPS held in the wallet, which can be transferred from another address or obtained from mining)
 
-## 挖矿原理
-- GPFS网络每十分钟随机选出若干个（数据数量白皮书中有详细说明）在线的幸运矿工节点。其原理类似Filecoin的爆块。
-- 然后使用EIP712签名协议，生成若干张支票，发放给幸运矿工。矿工得到支票后，需要调用智能合约，将支票兑换成GPS代币。兑换支票的时间没有限制，可积累到一定数量后在浏览器中一次性兑换。
-- GPS总量100亿，4年减半，减半前每轮（10分钟）出票 23782.3439 GPS。
-- 每轮出票，50%平均发放给幸运矿工，50%按幸运矿工持有GPS的数量比例发放，所以持有GPS数量越多，获得奖励越多。（这里的持有必须是钱包中持有的GPS，可以是从其他地址转账过来，或者挖矿兑换得来）
+## Issues that need attention
+- Each wallet address can only be used by one node. If an address has already been used, the system will ignore the node.
+- P2P network has a certain delay, sometimes it takes a few minutes to be discovered by other nodes after startup.
+- GPFS fully supports all functions and commands of IPFS. You can use `gpfs -h` to view more help.
 
+## Contacts
 
-## 需要注意的问题
-- 每个钱包地址只能给一个节点使用。如果一个地址已经被使用过，系统会忽略该节点。
-- P2P网络有一定的延迟性，有时启动后需要等待几分钟才能被其他节点发现。 
-- GPFS完全支持IPFS的所有功能和命令，可以通过 `gpfs -h`，查看更多帮助。
-
-## 联系方式
-
-电报群：  https://t.me/gpfs_cn
+Telegram：  https://t.me/GPSToken
