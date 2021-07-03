@@ -28,8 +28,8 @@ Unzip `linux_amd64.zip` and execute in turn
 ```
 chmod 766 gpfs
 cp gpfs /usr/local/bin
-export IPFS_PATH=你想要的工作目录
-gpfs daemon --init --miner-address=你的BSC钱包地址
+export IPFS_PATH=The working directory you want
+gpfs daemon --init --miner-address=Your BSC wallet address
 ```
 
 ## Miner browser
