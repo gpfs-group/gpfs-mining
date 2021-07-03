@@ -1,4 +1,5 @@
 # GPFS mining tutorial
+[简体中文](README_CN.md)
 
 ## Download mining software
 
