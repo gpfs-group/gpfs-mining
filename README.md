@@ -50,4 +50,4 @@ You can check the miner's status and ticket issuance on the miner's browser. Bef
 
 ## Contacts
 
-Telegram：  https://t.me/GPSToken
+Telegram： https://t.me/gpfsnet
