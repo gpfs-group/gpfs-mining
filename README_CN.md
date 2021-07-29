@@ -6,6 +6,7 @@
 https://github.com/gpfs-group/gpfs-mining/releases
 
 ## Windows 环境
+### 使用命令行软件挖矿
 解压`windows_amd64.zip` (32位版本`windows_386.zip`)  
 用记事本打开`run.bat`, 修改其中的工作目录（保证硬盘中至少有10G空间）和钱包地址。
 ```
@@ -19,6 +20,11 @@ pause
 ```
 Daemon is ready
 ```
+
+### 使用GPFS World挖矿（推荐）
+Windows环境还支持使用GPFS World桌面软件挖矿，它既是GPFS网络节点，也是一个文件管理软件。挖矿更简单，下载解压运行即可，不需要进行任何配置。  
+项目地址： https://github.com/gpfs-group/gpfs-world
+
 
 ## Linux 环境
 解压`linux_amd64.zip`，依次执行
