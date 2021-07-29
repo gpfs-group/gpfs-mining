@@ -23,7 +23,7 @@ Daemon is ready
 
 ### 使用GPFS World挖矿（推荐）
 Windows环境还支持使用GPFS World桌面软件挖矿，它既是GPFS网络节点，也是一个文件管理软件。挖矿更简单，下载解压运行即可，不需要进行任何配置。  
-项目地址： https://github.com/gpfs-group/gpfs-world
+下载地址： https://github.com/gpfs-group/gpfs-world/releases
 
 
 ## Linux 环境
