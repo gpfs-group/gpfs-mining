@@ -1,5 +1,6 @@
 # GPFS Mining Tutorial
 
+[简体中文](README_CN.md)
 
 ## Windows
 Download link: https://github.com/gpfs-group/gpfs-world/releases
