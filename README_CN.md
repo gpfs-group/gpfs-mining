@@ -6,7 +6,7 @@ Windows使用GPFS World桌面软件挖矿，它既是GPFS网络节点，也是�
 下载地址： https://github.com/gpfs-group/gpfs-world/releases
 
 软件启动后，会自动生成一个随机的BSC地址，私钥可以复制出来，导入到其他钱包使用。  
-若不希望用软件自动的生的地址，也可以使用其他钱包生成的地址，通过修改软件的配置文件实现。配置文件位于repo/config，修改里面的 Wallet.PrivateKey，然后重启软件。
+也可以使用其他钱包生成的地址，通过修改软件的配置文件实现。配置文件位于repo/config，修改里面的 Wallet.PrivateKey变成你自己的私钥，然后重启软件。
 
 
 ## Linux 环境
