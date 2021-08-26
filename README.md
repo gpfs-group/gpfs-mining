@@ -33,7 +33,7 @@ The exchange of cheques needs to interact with smart contracts, so a certain amo
 
 ## Mining principle
 
-Please read [《GPFS White Paper》](https://github.com/gpfs-group/gpfs-litepaper/blob/main/README.md)
+Please read [《GPFS Network Litepaper》](https://github.com/gpfs-group/gpfs-litepaper/blob/main/README.md)
 
 
 ## Issues that need attention
